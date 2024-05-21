@@ -12,8 +12,16 @@ const routes = {
     '#/map': 'pages/map.html',
     '#/time': 'pages/time.html',
 }
+
 const handleLocation = async () => {
-    if (!window.location.hash) window.location.hash = '#/activity';
+    if (!window.location.hash) {
+        window.location.hash = '#/activity'
+    };
+
+    if (window.location.hash === '#/map') {
+        handleMap();
+    }
+
     const path = window.location.hash;
 
     document.querySelectorAll('.nav__link').forEach((link) => {
