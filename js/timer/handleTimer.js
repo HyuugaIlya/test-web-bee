@@ -25,7 +25,7 @@ function handleTimer() {
         }
     }
 
-    timerBlockInterval = setInterval(updateTimer, 0);
+    timerBlockInterval = setInterval(updateTimer, 10);
 
     return () => clearInterval(timerBlockInterval);
 };
