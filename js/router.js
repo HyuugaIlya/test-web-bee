@@ -17,7 +17,6 @@ const handleLocation = async () => {
     if (!window.location.hash) {
         window.location.hash = '#/activity'
     };
-
     if (window.location.hash === '#/map') {
         handleMap();
     }

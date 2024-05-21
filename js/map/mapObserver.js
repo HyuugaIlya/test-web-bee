@@ -1,14 +1,13 @@
-const observer = new MutationObserver((mutations) => {
+const mapObserver = new MutationObserver((mutations) => {
     mutations.map(mutation => {
         if (mutation.addedNodes[0].id === 'map-container') {
             initMap();
         }
     })
-
 });
 
-const target = document.querySelector('#main-content');
+const targetMap = document.querySelector('#main-content');
 
-observer.observe(target, {
+mapObserver.observe(targetMap, {
     childList: true,
 });

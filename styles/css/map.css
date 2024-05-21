@@ -6,7 +6,7 @@
 }
 
 .map__head {
-    padding: 18.5px 32px;
+    padding: 16px 32px;
     display: flex;
     justify-content: space-between;
 }
@@ -14,6 +14,7 @@
     display: flex;
     align-items: center;
     font-size: 16px;
+    color: #505050;
 }
 .map__head span {
     display: flex;
