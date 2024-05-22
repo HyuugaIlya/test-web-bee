@@ -3,12 +3,17 @@
     display: flex;
     flex-direction: column;
     background-color: #FFFFFF;
+    margin: 0 0 32px 0;
 }
 
 .timer__head {
     padding: 16px 32px;
     display: flex;
     justify-content: space-between;
+
+    @media (max-width: 525px) {
+        padding: 16px;
+    }
 }
 .timer__head p {
     display: flex;
@@ -23,8 +28,6 @@
 .timer__head span p {
     display: flex;
     align-items: center;
-    width: 24px;
-    height: 24px;
     cursor: pointer;
 }
 
@@ -33,4 +36,9 @@
     width: 100%;
     display: flex;
     color: #505050;
+    user-select: none;
+
+    @media (max-width: 525px) {
+        padding: 16px;
+    }
 }

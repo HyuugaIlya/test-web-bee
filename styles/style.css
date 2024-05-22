@@ -1,9 +1,9 @@
-@import './css/activity.css';
-@import './css/header.css';
-@import './css/main.css';
-@import './css/map.css';
-@import './css/navigation.css';
-@import './css/time.css';
+@import './components/activity.css';
+@import './components/header.css';
+@import './components/main.css';
+@import './components/map.css';
+@import './components/navigation.css';
+@import './components/time.css';
 
 *,
 *:before,
@@ -20,11 +20,19 @@ body {
 	background-color: #F1F1F1;
     font-family: "Roboto", sans-serif;
 	font-size: 16px;
+	overflow-x: hidden;
+	line-height: normal;
 }
 
 a {
     text-decoration: none;
 }
+
+p,
+h3 {
+	margin-bottom: 0;
+}
+
 svg {
     pointer-events: none;
 }

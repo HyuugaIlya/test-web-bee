@@ -1,0 +1,28 @@
+.container-fluid {
+    --bs-gutter-x: 0;
+    color: #505050;
+}
+
+.map__content {
+    height: 480px;
+
+    @media (max-width: 768px) {
+        height: 380px;
+    }
+}
+
+@keyframes spin {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.map__preloader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: spin 2s linear infinite;
+}
