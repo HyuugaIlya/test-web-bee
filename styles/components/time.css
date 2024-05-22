@@ -1,0 +1,44 @@
+.timer__container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    margin: 0 0 32px 0;
+}
+
+.timer__head {
+    padding: 16px 32px;
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 525px) {
+        padding: 16px;
+    }
+}
+.timer__head p {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    color: #505050;
+}
+.timer__head span {
+    display: flex;
+    gap: 8px;
+}
+.timer__head span p {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.timer__content {
+    padding: 16px 32px 32px 32px;
+    width: 100%;
+    display: flex;
+    color: #505050;
+    user-select: none;
+
+    @media (max-width: 525px) {
+        padding: 16px;
+    }
+}
